@@ -67,6 +67,9 @@ export class AppComponent {
     record.address=this.empForm.controls['address'].value
     record.name=this.empForm.controls['name'].value
     record.contactNo=this.empForm.controls['contactNo'].value
+    record.emailId=this.empForm.controls['emailId'].value
+    record.city=this.empForm.controls['city'].value
+    record.state=this.empForm.controls['state'].value
    }
    localStorage.setItem("EmpData",JSON.stringify(this.empList))
    this.empObj =new EmployeeModel();
